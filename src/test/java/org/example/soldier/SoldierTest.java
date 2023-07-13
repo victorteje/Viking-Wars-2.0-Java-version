@@ -47,17 +47,17 @@ class SoldierTest {
         assertEquals(150, resultAttack);
     }
 
-//    @Test
-//    public void damage_should_receive_1_arguments() {
-//        Soldier soldier = new Soldier(health, strength);
-//        soldier.receiveDamage(20);
-//        assertEquals(280, soldier.health);
-//    }
-//
-//    @Test
-//    public void should_remove_the_received_damage_from_the_health_property() {
-//        var soldier = new Soldier(health, strength);
-//        soldier.receiveDamage(30);
-//        assertEquals(270, soldier.health);
-//    }
+    @Test
+    public void damage_should_receive_1_arguments() {
+        Soldier soldier = new Soldier(health, strength);
+        soldier.receiveDamage(20);
+        assertEquals(280, soldier.health);
+    }
+
+    @Test
+    public void should_remove_the_received_damage_from_the_health_property() {
+        var soldier = new Soldier(health, strength);
+        soldier.receiveDamage(30);
+        assertEquals(270, soldier.health);
+    }
 }
