@@ -44,36 +44,35 @@ class SaxonTest {
     @Test
     public void attack_should_receive_0_arguments() {
         Saxon saxon = new Saxon(health, strength);
-        int damage = 50;
-        int resultAttack = saxon.attack(damage);
+        int resultAttack = saxon.attack();
         assertEquals(this.strength, resultAttack);
     }
 
-//    @Test
-//    public void damage_should_receive_1_arguments() {
-//        Saxon saxon = new Saxon(health, strength);
-//        saxon.receiveDamage(50);
-//        assertEquals(10, saxon.health);
-//    }
+    @Test
+    public void damage_should_receive_1_arguments() {
+        Saxon saxon = new Saxon(health, strength);
+        saxon.receiveDamage(50);
+        assertEquals(10, saxon.health);
+    }
 
-//    @Test
-//    public void should_remove_the_received_damage_from_the_health_property() {
-//        Saxon saxon = new Saxon(health, strength);
-//        saxon.receiveDamage(50);
-//        assertEquals(10, saxon.health);
-//    }
+    @Test
+    public void should_remove_the_received_damage_from_the_health_property() {
+        Saxon saxon = new Saxon(health, strength);
+        saxon.receiveDamage(50);
+        assertEquals(10, saxon.health);
+    }
 
-//    @Test
-//    public void should_return_A_Saxon_has_received_DAMAGE_points_of_damage_if_the_Saxon_is_still_alive() {
-//        Saxon saxon = new Saxon(health, strength);
-//        saxon.receiveDamage(45);
-//        assertEquals("A Saxon has received" + 45 + "points of damage", saxon.getMsg());
-//    }
+    @Test
+    public void should_return_A_Saxon_has_received_DAMAGE_points_of_damage_if_the_Saxon_is_still_alive() {
+        Saxon saxon = new Saxon(health, strength);
+        saxon.receiveDamage(45);
+        assertEquals("A Saxon has received" + 45 + "points of damage", saxon.getMsg());
+    }
 
-//    @Test
-//    public void should_return_A_Saxon_has_died_in_combat_if_the_Saxon_dies() {
-//        Saxon saxon = new Saxon(health, strength);
-//        saxon.receiveDamage(health);
-//        assertEquals("A Saxon has died in combat", saxon.getMsg());
-//    }
+    @Test
+    public void should_return_A_Saxon_has_died_in_combat_if_the_Saxon_dies() {
+        Saxon saxon = new Saxon(health, strength);
+        saxon.receiveDamage(health);
+        assertEquals("A Saxon has died in combat", saxon.getMsg());
+    }
 }
