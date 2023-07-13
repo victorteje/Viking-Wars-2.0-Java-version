@@ -7,4 +7,8 @@ public class Soldier {
         this.health = health;
         this.strength = strength;
     }
+
+    public int attack(){
+        return strength;
+    }
 }
