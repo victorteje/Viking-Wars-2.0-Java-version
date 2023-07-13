@@ -1,4 +1,4 @@
-package org.example.viking;
+package org.example.vikins;
 
 import org.example.soldier.Soldier;
 import org.junit.jupiter.api.Test;
@@ -10,32 +10,32 @@ class VikingTest {
     int strength = 150;
     int health = 300;
 
-//    Viking viking = new Viking(name, health, strength);
-//
-//    @Test
-//    public void should_inherit_from_Soldier() {
-//        assertNotNull(viking instanceof Soldier);
-//    }
-//
-//    @Test
-//    public void should_receive_3_arguments() {
-//        assertNotNull(viking);
-//    }
-//
-//    @Test
-//    public void should_receive_the_health_property_as_its_1st_argument() {
-//        assertEquals("Harald", viking.name);
-//    }
-//
-//    @Test
-//    public void should_receive_the_health_property_as_its_2st_argument() {
-//        assertEquals(300, viking.health);
-//    }
-//
-//    @Test
-//    public void should_receive_the_health_property_as_its_3st_argument() {
-//        assertEquals(150, viking.strength);
-//    }
+    Vikings viking = new Vikings(name, health, strength);
+
+    @Test
+    public void should_inherit_from_Soldier() {
+        assertNotNull(viking instanceof Soldier);
+    }
+
+    @Test
+    public void should_receive_3_arguments() {
+        assertNotNull(viking);
+    }
+
+    @Test
+    public void should_receive_the_health_property_as_its_1st_argument() {
+        assertEquals("Harald", viking.name);
+    }
+
+    @Test
+    public void should_receive_the_health_property_as_its_2st_argument() {
+        assertEquals(300, viking.health);
+    }
+
+    @Test
+    public void should_receive_the_health_property_as_its_3st_argument() {
+        assertEquals(150, viking.strength);
+    }
 //
 //    @Test
 //    public void attack_should_return_strength_property_of_the_Saxon() {
