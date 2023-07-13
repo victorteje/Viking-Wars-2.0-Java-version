@@ -38,7 +38,7 @@ class VikingTest {
     }
 
     @Test
-    public void attack_should_return_strength_property_of_the_Saxon() {
+    public void attack_should_return_strength_property_of_the_viking() {
         int resultAttack = viking.attack();
         assertEquals(viking.strength, resultAttack);
     }

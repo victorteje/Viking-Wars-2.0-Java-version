@@ -20,8 +20,12 @@ public class Vikings extends Soldier {
             msg = this.name + "has received" + damage + "points of damage";
         }
     }
-
     public String getMsg() {
         return msg;
+    }
+
+    String odin = "Odin Owns You All!";
+    public String battleCry() {
+        return odin;
     }
 }
