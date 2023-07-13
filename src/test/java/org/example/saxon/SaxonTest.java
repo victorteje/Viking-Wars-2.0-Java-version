@@ -34,20 +34,20 @@ class SaxonTest {
         assertEquals(25, saxon.strength);
     }
 
-//    @Test
-//    public void attack_should_return_strength_property_of_the_Saxon() {
-//        Saxon saxon = new Saxon(health, strength);
-//        var resultAttack = saxon.attack();
-//        assertEquals(saxon.strength, resultAttack);
-//    }
+    @Test
+    public void attack_should_return_strength_property_of_the_Saxon() {
+        Saxon saxon = new Saxon(health, strength);
+        var resultAttack = saxon.attack();
+        assertEquals(saxon.strength, resultAttack);
+    }
 
-//    @Test
-//    public void attack_should_receive_0_arguments() {
-//        Saxon saxon = new Saxon(health, strength);
-//        int damage = 50;
-//        int resultAttack = saxon.attack(damage);
-//        assertEquals(this.strength, resultAttack);
-//    }
+    @Test
+    public void attack_should_receive_0_arguments() {
+        Saxon saxon = new Saxon(health, strength);
+        int damage = 50;
+        int resultAttack = saxon.attack(damage);
+        assertEquals(this.strength, resultAttack);
+    }
 
 //    @Test
 //    public void damage_should_receive_1_arguments() {
