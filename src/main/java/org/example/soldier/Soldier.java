@@ -9,10 +9,12 @@ public class Soldier {
     }
 
     public int attack(){
+
         return strength;
     }
 
     public void receiveDamage(int damage){
+
         this.health = this.health - damage;
     }
 
