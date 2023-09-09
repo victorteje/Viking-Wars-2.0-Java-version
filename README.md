@@ -213,9 +213,3 @@ Devuelve el estado actual de la guerra (`War`) basado en el tamaño de los ejér
 
 
 💪
-# vikings-2.0
-# vikings-2.0
-# vikings-2.0
-# vikins-2.0
-# vikings-2.0
-# vikins-2.0

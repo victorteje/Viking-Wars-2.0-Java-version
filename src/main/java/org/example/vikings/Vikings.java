@@ -1,4 +1,4 @@
-package org.example.vikins;
+package org.example.vikings;
 import org.example.soldier.Soldier;
 
 

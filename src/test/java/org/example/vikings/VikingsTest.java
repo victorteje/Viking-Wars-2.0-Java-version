@@ -1,4 +1,4 @@
-package org.example.vikins;
+package org.example.vikings;
 
 import org.example.soldier.Soldier;
 import org.junit.jupiter.api.Test;
@@ -64,13 +64,13 @@ class VikingTest {
     @Test
     public void should_return_NAME_has_received_DAMAGE_points_of_damage_if_the_Viking_is_still_alive() {
         viking.receiveDamage(50);
-        assertEquals(viking.name + "has received" + 50 + "points of damage", viking.getMsg());
+        assertEquals(viking.name + "" + "has received" + 50 + "" + "points of damage", viking.getMsg());
     }
 
     @Test
     public void should_return_NAME_has_died_in_act_of_combat_if_the_Viking_dies() {
         viking.receiveDamage(health);
-        assertEquals(viking.name + "has died in combat", viking.getMsg());
+        assertEquals(viking.name + "" + "has died in combat", viking.getMsg());
     }
 
     @Test

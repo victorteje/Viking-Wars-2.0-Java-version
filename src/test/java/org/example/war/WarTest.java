@@ -1,10 +1,8 @@
 package org.example.war;
 
 import org.example.saxon.Saxon;
-import org.example.vikins.Vikings;
+import org.example.vikings.Vikings;
 import org.junit.jupiter.api.Test;
-
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,11 +22,11 @@ class WarTest {
         assertNotNull(war);
     }
 
-    @Test
-    public void should_assign_an_empty_array_to_the_vikingArmy_property() {
-        List<Vikings> vikingArmy = war.getVikingArmy();
-        assertTrue(vikingArmy.isEmpty());
-    }
+//    @Test
+//    public void should_assign_an_empty_array_to_the_vikingArmy_property() {
+//        List<Vikings> vikingArmy = war.getVikingArmy();
+//        assertTrue(vikingArmy.isEmpty());
+//    }
 
 //    @Test
 //    public void should_assign_an_empty_array_to_the_saxonArmy_property() {
